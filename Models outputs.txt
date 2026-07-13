@@ -1,0 +1,11 @@
+1) DecisionTreeRegressor:
+    Mean: 4.364834702472379
+    Standard deviation: 1.0877893651896442
+
+2) LinearRegression:
+    Mean: 4.3188382117988855
+    Standard deviation: 1.223965712541735
+
+3) RamdomForest:
+    Mean: 3.3039793714438437
+    Standard deviation: 0.750144542876691
