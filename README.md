@@ -1,9 +1,9 @@
 # Machine-Learning-Projects
-# 🐉 Dragon Real Estate - Price Predictor
+# Dragon Real Estate - Price Predictor
 
 A machine learning project that predicts median house prices using the classic **Boston Housing dataset**. The pipeline covers data exploration, stratified train/test splitting, feature engineering, model training with Random Forest Regression, and evaluation via cross-validation.
 
-## 📋 Overview
+## Overview
 
 This project walks through a complete end-to-end ML workflow:
 
@@ -17,7 +17,7 @@ This project walks through a complete end-to-end ML workflow:
 8. **Model Persistence** — save the trained model with `joblib`
 9. **Final Testing** — evaluate on the held-out test set
 
-## 📊 Dataset
+##  Dataset
 
 The project uses the Boston Housing dataset (`housing_data.csv`), which contains 506 records of housing data across Boston suburbs, with features including:
 
@@ -49,7 +49,7 @@ The project uses the Boston Housing dataset (`housing_data.csv`), which contains
 - **scikit-learn** — preprocessing, modeling, and evaluation
 - **joblib** — model serialization
 
-## 📦 Installation
+## Installation
 
 Clone the repository and install the required dependencies:
 
@@ -59,7 +59,7 @@ cd dragon-real-estate
 pip install pandas numpy matplotlib scikit-learn joblib
 ```
 
-## 🚀 Usage
+## Usage
 
 Make sure `housing_data.csv` is in the project directory, then run:
 
@@ -81,7 +81,7 @@ model = load('housing_model.joblib')
 predictions = model.predict(prepared_data)
 ```
 
-## 🔍 Methodology
+## Methodology
 
 **Stratified Splitting:** Rather than a purely random train/test split, `StratifiedShuffleSplit` is used on the `CHAS` feature to ensure both the training and test sets have a representative proportion of river-adjacent tracts.
 
@@ -91,7 +91,7 @@ predictions = model.predict(prepared_data)
 
 **Evaluation:** Beyond a simple train-set RMSE, 10-fold cross-validation is used to get a more reliable estimate of model performance and reduce the risk of overfitting to a single split.
 
-## 📈 Results
+## Results
 
 The model outputs:
 - Mean Squared Error (MSE) and Root Mean Squared Error (RMSE) on the training set
@@ -100,7 +100,7 @@ The model outputs:
 
 *(Run the script to see current metrics — results depend on the specific train/test split and random forest configuration.)*
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Machine Learning Project/
@@ -110,7 +110,7 @@ Machine Learning Project/
 └── README.md                 # Project documentation
 ```
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Hyperparameter tuning via `GridSearchCV` or `RandomizedSearchCV`
 - Handling of missing values with `SimpleImputer` in the pipeline
@@ -118,6 +118,6 @@ Machine Learning Project/
 - Comparison against other regressors (Gradient Boosting, XGBoost)
 - A simple web interface or API for making predictions on new data
 
-## 👤 Author
+## Author
 
 **Husnain** — [@husnaincodes](https://github.com/husnaincodes)
